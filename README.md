@@ -3,14 +3,15 @@
 Give office visitors Wi-Fi access the moment they sign in, with no front-desk
 or IT involvement and no shared guest password.
 
-This repo describes a simple, general pattern and includes one working
-reference implementation:
+This repo describes a simple, general pattern and includes the working
+implementation I built with these three products:
 
 > **Envoy** (visitor management) → **Tines** (automation) → **Arista AGNI** (guest network access)
 
 It runs in production across multiple offices on different continents from a
-single workflow. The pattern isn't tied to those three products. If you use
-different tools, the design and the decision logic should carry over. See
+single workflow. I used Envoy, Tines and AGNI, but the pattern isn't tied to
+them: any visitor system, automation tool and guest network system that can
+do the same jobs will work. See
 [Adapting to other platforms](#adapting-to-other-platforms).
 
 ## The pattern
@@ -64,7 +65,7 @@ For each sign-in event, [`envoy_agni_guest.py`](envoy_agni_guest.py):
 Every rule is a few lines you can change or delete. Different opt-in wording,
 a different expiry policy or a longer password is a small edit.
 
-## Reference implementation: Envoy + Tines + AGNI
+## My implementation: Envoy + Tines + AGNI
 
 ### Flow
 
