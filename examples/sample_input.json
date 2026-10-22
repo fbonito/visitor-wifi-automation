@@ -1,0 +1,13 @@
+{
+  "full_name": "Jane Visitor",
+  "email": "jane.visitor@example.com",
+  "flow_name": "Multiday visitor",
+  "signed_in_at": "2026-04-27T08:15:00Z",
+  "user_data": [
+    {"field": "Do you want Wi-Fi access?", "value": "Yes - your password will be emailed to you"},
+    {"field": "Last day of your visit", "value": "2026-04-29"}
+  ],
+  "entry_id": "12345678",
+  "office_timezone": "America/Los_Angeles",
+  "location_id": "123456"
+}

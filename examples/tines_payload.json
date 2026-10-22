@@ -1,0 +1,10 @@
+{
+  "full_name":       "<<webhook_trigger.body.payload.attributes['full-name']>>",
+  "email":           "<<webhook_trigger.body.payload.attributes.email>>",
+  "flow_name":       "<<webhook_trigger.body.payload.attributes['flow-name']>>",
+  "signed_in_at":    "<<webhook_trigger.body.payload.attributes['signed-in-at']>>",
+  "user_data":       "<<webhook_trigger.body.payload.attributes['user-data']>>",
+  "entry_id":        "<<webhook_trigger.body.payload.id>>",
+  "office_timezone": "<<webhook_trigger.body.payload.attributes['location-timezone']>>",
+  "location_id":     "<<webhook_trigger.body.meta.location.id>>"
+}
